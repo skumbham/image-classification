@@ -1,10 +1,13 @@
 allow_embedding: false
-package_name: Material_Design_1
-name: Material Design 1
+package_name: My_Stock_Application
+name: My Stock Application
 startup_form: Form1
 runtime_options:
   version: 2
   client_version: '3'
   server_version: python3-sandbox
   server_spec: {base: python310-standard}
-services: []
+services:
+- source: /runtime/services/tables.yml
+  client_config: {}
+  server_config: {}

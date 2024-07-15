@@ -3,11 +3,20 @@ container:
   type: HtmlTemplate
   properties: {html: '@theme:standard-page.html'}
 components:
-- type: ColumnPanel
-  properties: {}
-  name: content_panel
-  layout_properties: {slot: default}
 - type: FlowPanel
   properties: {}
   name: navbar_links
   layout_properties: {slot: nav-right}
+  components:
+  - type: ColumnPanel
+    properties: {}
+    name: content_panel
+    components: []
+- name: headline_1
+  properties: {role: headline, text: My Stock Application}
+  type: Label
+  layout_properties: {slot: title}
+- name: card_1
+  properties: {role: card}
+  type: ColumnPanel
+  layout_properties: {slot: default}
