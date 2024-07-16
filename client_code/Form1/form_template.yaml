@@ -31,6 +31,10 @@ components:
       properties: {height: 508.300048828125}
       type: Image
       layout_properties: {grid_position: 'TKBLQS,GZSRSI'}
+    - name: label_prediction
+      properties: {text: ''}
+      type: Label
+      layout_properties: {grid_position: 'PPKBSE,HZYKSF'}
 - name: headline_1
   properties: {role: headline, text: IMAGE CLASSIFICATION USING YOLO, align: center, bold: false}
   type: Label
