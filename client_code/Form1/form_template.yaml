@@ -12,10 +12,6 @@ components:
     properties: {}
     name: content_panel
     components: []
-- name: headline_1
-  properties: {role: headline, text: My Stock Application}
-  type: Label
-  layout_properties: {slot: title}
 - name: card_1
   properties: {role: card}
   type: ColumnPanel
@@ -24,18 +20,19 @@ components:
   - name: card_2
     properties: {role: card}
     type: ColumnPanel
-    layout_properties: {grid_position: 'GBOGBY,WJCEMC'}
+    layout_properties: {grid_position: 'GBOGBY,WJCEMC', row_background: 'theme:Gray 600'}
     components:
     - name: file_loader_1
       properties: {file_types: image/*, enabled: true}
       type: FileLoader
-      layout_properties: {grid_position: 'KVNJCO,WHPPTM'}
+      layout_properties: {grid_position: 'EZLBUN,NAFMQR', row_background: 'theme:Gray 800'}
       event_bindings: {change: file_loader_1_change}
     - name: image_1
-      properties: {}
+      properties: {height: 508.300048828125}
       type: Image
-      layout_properties: {grid_position: 'KIYTCU,NVFCLH'}
-  - name: label_prediction
-    properties: {}
-    type: Label
-    layout_properties: {grid_position: 'GIYGIG,FFDEPQ'}
+      layout_properties: {grid_position: 'TKBLQS,GZSRSI'}
+- name: headline_1
+  properties: {role: headline, text: IMAGE CLASSIFICATION USING YOLO, align: center, bold: false}
+  type: Label
+  layout_properties: {slot: title}
+slots: {}

@@ -1,12 +1,13 @@
 allow_embedding: false
-package_name: My_Stock_Application
-name: My Stock Application
+package_name: Image_Classification
+name: Image Classification
 startup_form: Form1
 runtime_options:
-  version: 2
+  version: 3
   client_version: '3'
   server_version: python3-sandbox
   server_spec: {base: python310-standard}
+  legacy_features: {class_names: true, bootstrap3: true, __dict__: true, root_container: true}
 services:
 - source: /runtime/services/tables.yml
   client_config: {}
@@ -15,3 +16,5 @@ services:
   client_config: {}
   server_config: {}
 uplink_visible: true
+metadata: {title: Image Classification, logo_img: 'asset:6499468f33db295c5a1219ec_Ultralytics_mark_blue.svg'}
+native_deps: null
